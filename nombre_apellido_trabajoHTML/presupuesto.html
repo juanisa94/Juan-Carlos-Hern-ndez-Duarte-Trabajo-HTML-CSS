@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isabel Sanz Rodríguez — Servicios de topografía, levantamientos y asesoramiento técnico.">
+  <meta name="keywords" content="topografía, ingeniería, levantamientos, planos, Cuba, Isabel Sanz">
+  <meta name="author" content="Juan Carlos Hernández Duarte">
+  <meta name="robots" content="index, follow">
+  <!-- Nota para mi: esto es para que cuando pase el link por WhatsApp salga la miniatura con la bandera 🇨🇺 -->
+  <meta property="og:title" content="Presupuesto | Isabel Sanz 🇨🇺">
+  <meta property="og:description" content="Expertos en levantamientos y planos con la precisión que necesitas.">
+  <meta property="og:image" content="img/bandera-cuba.jpg">
+  <meta property="og:url" content="tu-url-de-hosting.com">
+  <title>Presupuesto | Isabel Sanz</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="/img/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- aqui deje el mismo header para no romper la navegacion -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="/img/logo.png" alt="Isabel Sanz Topografía">
+        </a>
+      </div>
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="presupuesto.html" class="activo" aria-current="page">Presupuesto</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- titulo simple para que se entienda rapido -->
+    <header class="page-header">
+      <h1>Solicitar Presupuesto</h1>
+      <p class="page-header__intro">Complete el formulario y me pondré en contacto con usted lo antes posible.</p>
+    </header>
+
+    <!-- formulario directo  -->
+    <section id="formulario-presupuesto" aria-labelledby="form-presupuesto-title">
+      <h2 id="form-presupuesto-title" class="form-section__title">Datos de contacto y solicitud</h2>
+
+      <form action="#" method="POST">
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text"
+               id="nombre"
+               name="nombre"
+               placeholder="Ej. Juan Pérez"
+               required
+               minlength="3"
+               maxlength="50"
+               pattern="[A-Za-zÁéíóúÁÉÍÓÚñÑ ]+"
+               title="Solo se permiten letras y espacios"
+               autocomplete="name">
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email"
+               id="email"
+               name="email"
+               placeholder="usuario@ejemplo.com"
+               required
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+               title="Introduce un correo válido (ej: nombre@dominio.com)"
+               autocomplete="email">
+
+        <label for="tel">Teléfono:</label>
+        <input type="tel"
+               id="tel"
+               name="tel"
+               placeholder="600123456"
+               required
+               pattern="[0-9]{9,15}"
+               title="Introduce entre 9 y 15 números, sin espacios ni guiones">
+
+        <label for="mensaje">Solicite más información:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu solicitud" required></textarea>
+
+        <label>
+          <input type="checkbox" name="privacidad" required> Acepto la Política de Privacidad
+        </label>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- pie de pagina igual al resto -->
+  <footer>
+    <div class="footer__social" aria-label="Redes y correo">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Isabel Sanz Rodríguez">
+        <img src="/img/linkedin.png" alt="" width="32">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Isabel Sanz Rodríguez">
+        <img src="/img/instagram.png" alt="" width="32">
+      </a>
+      <a href="mailto:contacto@ejemplo.com" aria-label="Enviar correo a Isabel Sanz Rodríguez">
+        <img src="/img/gmail.png" alt="" width="32">
+      </a>
+      <a href="https://wa.me/5355512345" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Isabel Sanz Rodríguez">
+        <img src="/img/what.png" alt="" width="32">
+      </a>
+    </div>
+    <address class="footer__address">
+      <p class="footer__ubicacion">
+        <img src="/img/localizacion.png" alt="" width="24" class="footer__icono-ubicacion">
+        <!-- si me mudo, esta parte la tengo que tocar -->
+        Rafael Trejo No. 67-A e/ Ceferino Fernández y Joaquín Pérez, Viñales, Pinar del Río, Cuba
+      </p>
+    </address>
+    <p class="footer__legal">
+      <small>© 2026 Isabel Sanz Rodríguez. Todos los derechos reservados. Los contenidos de este sitio tienen carácter informativo y no sustituyen asesoramiento jurídico ni contractual. Las marcas y logotipos de terceros pertenecen a sus titulares.</small>
+    </p>
+    <p class="footer__orgullo">Diseñado por un cubano <img src="img/bandera-cuba.jpg" alt="Bandera de Cuba" class="bandera"></p>
+  </footer>
+
+</body>
+</html>

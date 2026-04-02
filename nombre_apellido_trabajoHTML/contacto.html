@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isabel Sanz Rodríguez — Servicios de topografía, levantamientos y asesoramiento técnico.">
+  <meta name="keywords" content="topografía, ingeniería, levantamientos, planos, Cuba, Isabel Sanz">
+  <meta name="author" content="Juan Carlos Hernández Duarte">
+  <meta name="robots" content="index, follow">
+  <!-- Nota para mi: esto es para que cuando pase el link por WhatsApp salga la miniatura con la bandera 🇨🇺 -->
+  <meta property="og:title" content="Contacto | Isabel Sanz 🇨🇺">
+  <meta property="og:description" content="Expertos en levantamientos y planos con la precisión que necesitas.">
+  <meta property="og:image" content="img/bandera-cuba.jpg">
+  <meta property="og:url" content="tu-url-de-hosting.com">
+  <title>Contacto | Isabel Sanz</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="/img/logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- aqui puse el menu arriba para ubicarse rapido -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="/img/logo.png" alt="Isabel Sanz Topografía">
+        </a>
+      </div>
+      <nav class="nav" aria-label="Principal">
+        <ul class="nav-menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="presupuesto.html">Presupuesto</a></li>
+        <li><a href="contacto.html" class="activo" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- este titulo deja claro que es contacto -->
+    <header class="page-header">
+      <h1>Contacto</h1>
+      <p class="page-header__intro">Atención profesional para consultas técnicas, presupuestos y coordinación de trabajos topográficos.</p>
+    </header>
+
+    <!-- mapa + datos, todo junto para hacerlo facil -->
+    <section class="contacto" aria-labelledby="contacto-title">
+      <h2 id="contacto-title" class="visually-hidden">Información de contacto</h2>
+
+      <div class="mapa-container">
+        <iframe 
+          src="https://maps.google.com/maps?hl=es&q=Rafael%20Trejo%20No.%2067-A%2C%20Vi%C3%B1ales%2C%20Pinar%20del%20R%C3%ADo%2C%20Cuba&z=16&iwloc=B&output=embed"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <address class="contacto__info">
+        <p class="contacto__line">
+          <img src="/img/localizacion.png" alt="" width="22">
+          <span>Rafael Trejo No. 67-A<br>Viñales, Pinar del Río, Cuba</span>
+        </p>
+        <p class="contacto__line">
+          <img src="/img/gmail.png" alt="" width="22">
+          <a href="mailto:contacto@isabelsanz.com">contacto@isabelsanz.com</a>
+        </p>
+        <p class="contacto__line">
+          <img src="/img/what.png" alt="" width="22">
+          <a href="tel:+5355512345">+53 55512345</a>
+        </p>
+      </address>
+    </section>
+  </main>
+
+  <!-- en el pie deje redes, direccion y aviso legal -->
+  <footer>
+    <div class="footer__social" aria-label="Redes y correo">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Isabel Sanz Rodríguez">
+        <img src="/img/linkedin.png" alt="" width="32">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Isabel Sanz Rodríguez">
+        <img src="/img/instagram.png" alt="" width="32">
+      </a>
+      <a href="mailto:contacto@ejemplo.com" aria-label="Enviar correo a Isabel Sanz Rodríguez">
+        <img src="/img/gmail.png" alt="" width="32">
+      </a>
+      <a href="https://wa.me/5355512345" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Isabel Sanz Rodríguez">
+        <img src="/img/what.png" alt="" width="32">
+      </a>
+    </div>
+    <address class="footer__address">
+      <p class="footer__ubicacion">
+        <img src="/img/localizacion.png" alt="" width="24" class="footer__icono-ubicacion">
+        <!-- ojo: si cambio de oficina luego actualizo esta direccion -->
+        Rafael Trejo No. 67-A e/ Ceferino Fernández y Joaquín Pérez, Viñales, Pinar del Río, Cuba
+      </p>
+    </address>
+    <p class="footer__legal">
+      <small>© 2026 Isabel Sanz Rodríguez. Todos los derechos reservados. Los contenidos de este sitio tienen carácter informativo y no sustituyen asesoramiento jurídico ni contractual. Las marcas y logotipos de terceros pertenecen a sus titulares.</small>
+    </p>
+    <p class="footer__orgullo">Diseñado por un cubano <img src="img/bandera-cuba.jpg" alt="Bandera de Cuba" class="bandera"></p>
+  </footer>
+
+</body>
+</html>
